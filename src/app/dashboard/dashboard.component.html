@@ -7,6 +7,14 @@
         [colspan]="friend.cols"
         [rowspan]="friend.rows">
       <img src="assets/friends/{{friend.name}}.png"/>
+      
+      <mat-grid-tile-footer>
+        <h3 mat-line>{{friend.name}}</h3>
+        <span mat-line>{{friend.status}}</span>
+          <button mat-icon-button aria-label="info icon">
+            <mat-icon>info</mat-icon>
+          </button>
+      </mat-grid-tile-footer>
     </mat-grid-tile>
   </mat-grid-list>
 </div>
